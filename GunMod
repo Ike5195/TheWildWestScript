@@ -1,4 +1,12 @@
---[[
+getgenv().gunmod = true;
+
+ 
+
+while wait() do
+
+    if getgenv().gunmod == true then
+
+       --[[
     Default value for faster reload is 1,
     Spam firing when the value is over 2 can result in invalid shots.
         
@@ -20,4 +28,8 @@ for _,v in next, getgc(true) do
         --// No Recoil
         v.BaseRecoil = 0
     end
+end
+
+    end
+
 end
