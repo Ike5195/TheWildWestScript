@@ -1,1 +1,3 @@
-
+game.Players.LocalPlayer.CharacterAdded:Connect(function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ike5195/TheWildWestScript/main/GunMod'),true))()
+end)
