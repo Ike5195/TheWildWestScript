@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Town Script by Ike#5195", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "The Wild West Script by Ike#5195", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "Combat",
@@ -22,3 +22,24 @@ Tab:AddButton({
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ike5195/TheWildWestScript/main/SilentAim')))()
   	end    
 })
+
+local Tab = Window:MakeTab({
+	Name = "Render",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Fullbright",
+	Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/Ike5195/TownScript/main/Fullbright'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Player ESP",
+	Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/Ike5195/TownScript/main/ESP'))()
+  	end    
+})
+
